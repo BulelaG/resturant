@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Chèvres</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!--Navbar Section-->
+<!-- <script src="navbar.js"></script> -->
+<nav>
+   <div class="topnav">
+      <ul>
+         <li><a class="navLinks" href="#Landing">Home</a></li>
+        <li><a class="navLinks" href="#About">About</a></li>
+        <li><a class="navLinks" href="#Menu">Menu</a></li>
+        <li><a class="navLinks" href="#contact">Contact</a></li>
+            <div class="topnav-right">
+                <li><a href="#Reserve" class="btn btn2" id="navLinks">Reserve Table</a></li>
+            </div>
+      </ul>
+    </div>
+</nav>
+
+    <!--Landing Section-->
+    <section id="Landing">
+        <h1 class="landing-title" data-aos="fade-right">Les Chèvres</h1>
+        <p class="subtitle text-white" data-aos="fade-right"><i>This Luxury Eatery Is For The Price Of Living.</i></p>
+    </section>
+    <!--End of Landing Section-->
+
+<!--About Section-->
+<section id="About">
+  <h2 class="about-title text-center py-3 text-white" >About Us</h2>
+  <div id="about-body" class="about-info text-center">
+      <p class="about-text">Our fine dining restaurant cater to exquisite palettes, whether it is the colours of our menu items or the colours of our staff uniforms.
+          It is not just attire that sets our restaurants apart from others; the dishes served in them are carefully selected, often with a focus on international flavors.
+          <br><br>
+          With dishes like turbot cooked in red wine, filet mignon cooked over charcoal, and rack of lamb served with figs, there is certainly something for everyone at our establishments.
+              While each cuisine has its own unique flavors and aesthetics, choosing a fine dining restaurant can provide you with unforgettable culinary experiences.
+              So if you're looking for a special meal that will standalone from all the others, consider trying out one of our exclusive eateries.
+            </p>
+
+              <br><h6 class="text-center text-warning about-title">Serving  : </h6>
+
+             <div class="d-flex justify-content-center">
+              <h3 class="about-title text-center py-3 text-secondary" >Breakfast </h3>
+              <h3 class="about-title text-center py-3 px-5 text-secondary" >Lunch </h3>
+              <h3 class="about-title text-center py-3 text-secondary" >Diner</h3>
+             </div>
+
+
+          </div>
+          <div class="line">
+            <hr >
+          </div>
+          <br>
+          <i> <h4 id="typed-text" class="text-center text-white"></h4></i>
+
+              <div id="slideshow-container ">
+                <img id="slideshow-image" src="" alt="">
+            </div>
+            <div class="testimonial d-flex justify-content-center">
+            <div id="testimonial-container">
+              <img id="testimonial-image" src="./assets/John Doe.jpg" alt=""><br><br>
+              <h5 id="testimonial-name" class="text-white">John Doe</h5>
+              <i><p id="testimonial-text">I recently had the pleasure of dining at Les Chèvres and I must say that it was an amazing experience. The amicable service made me feel welcomed and the comfortable seating was a great touch. I highly recommend Les Chèvres to anyone looking for a great night out.</p></i>
+          </div>
+            </div>
+</section>
+<!--End of About Section-->
+
+<!-- Start of gallery section -->
+<div class="gallery">
+<div class="gallery-heading py-2">
+  <h3 class="text-muted">#ShareYourVibe with us.</h3><br>
+</div>
+<em><h6 class="h4 text-muted">Post your happy memories on our gallery.</h6></em>
+
+<div id="input-div">
+  <input type="file" id="fileInput" accept=".jpg, .png" multiple>
+</div>
+<div id="imageGallery"></div>
+</div>
+<!-- End of Gallery section -->
+
+         <!--Menu Section-->
+         <section id="Menu">
+          <h2 class="menu-h1"> Our Menu</h2>
+          <!-- <h2 class="menu-title text-center">Menu</h2> -->
+          <br>
+          <h5 class="text-center">Browse our top delicious dishes </h5>
+          <br>
+          
+          <a href="./assets/Les Chèvres Food Menu.png" download class="d-flex justify-content-center"> 
+            <button type="button" class="btn btn-primary btn-sm">Download menu</button>
+          </a>
+       <br>
+          <!-- <div class="card-deck"> -->
+            <div class="row">
+              <div class="bg-muted" id="menuItems"></div>
+            </div>
+            <div class="row">
+              <div class="bg-secondary" id="HTMLmenuItems">
+
+              </div>
+            </div>
+              
+            </div>
+            <br>
+          
+      </section>
+      <!--End of Menu Section-->
+    
+    <!--Reserve Table Section-->
+<section id="Reserve">
+  <h2 class="reserve-title">RESERVE A TABLE</h2>
+  <div class="booking-form-w3layouts">
+      <form action="#" method="post">
+         <h2 class="sub-heading-agileits">Reservation Form</h2>
+         <div clclearass="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <select class="form-control">
+                  <option>Western Cape</option>
+                  <option value="Lorem Ipsum">Gauteng</option>
+                  <option value="Adipiscing">Eastern Cape</option>
+               </select>
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <select class="form-control">
+                  <option>Cape Town</option>
+                  <option value="Lorem Ipsum">Sandton</option>
+                  <option value="Adipiscing">Port alfred</option>
+               </select>
+            </div>
+         </div>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <select class="form-control">
+                  <option>Takeaway</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                 
+               </select>
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <select class="form-control">
+                  <option>Seat Down</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+               </select>
+            </div>
+         </div>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <input id="datepicker" name="Text" type="text" placeholder="Reservation Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker">
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" id="timepicker" name="Time" class="timepicker form-control hasWickedpicker" placeholder="Reservation Time" value="" onkeypress="return false;">
+            </div>
+         </div>
+       
+         
+         <h3 class="sub-heading-agileits">Personal Details</h3>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <input type="text" name="Name" placeholder="Full Name" required="">
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" name="Phone no" placeholder="Phone Number" required="">
+            </div>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text">
+            <input type="email" name="Email" placeholder="Email" required="">
+         </div>
+         <div class="clear"></div>
+         
+         <input type="submit" value="Submit">
+         <input type="reset" value="Clear Form">
+         <div class="clear"></div>
+      </form>
+   </div>
+</section>  
+<!--End of Reserve Table Section-->
+    <!--Contact Section-->
+
+
+
+    <section id="contact">
+ 
+      <h1 class="title text-white">CONTACT US</h1>
+           <h2 class="subtitle">We are here to assist you.</h2>
+    
+       <div class="contact">
+          
+           <br><br><br><br>
+       <div class="body-form">
+         <div class="contact-form">
+       <h2 class="subtitle">Type your query here.</h2>
+       <form id="contactForm" onsubmit="return validateForm()" action="https://formspree.io/f/xpzvwnez"
+       method="POST">
+                <input type="text" name="name" placeholder="Your Name" />
+                <input type="email" name="email" placeholder="Your E-mail Address" />
+                <textarea name="message" rows="8" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn-send">Get a Call Back</button>
+        </form>
+    
+     </div>
+     </div>
+    
+      <!-- <div class="address">
+         <h2>Ethos Restaurant <br>
+            Corner Eastwood and, <br>Parks Blvd, Rosebank, 2196</h2>
+      </div> -->
+     <div class="body-form">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.716528006627!2d28.04034477541312!3d-26.140784177115716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573f06b434189%3A0x4ee012ab17248e82!2sEthos%20Restaurant!5e0!3m2!1sen!2sza!4v1705534527176!5m2!1sen!2sza" width="450" height="400git " style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+   </div>
+        
+   </section>
+
+   
+    <footer class ="footer">
+
+      <div class="containr">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#About">about us</a></li>
+                    <li><a href="https://www.google.com/maps/@35.7041161,139.5576133,0a,41.1y,116.76h,80.49t/data=!3m4!1e1!3m2!1ss77urkl6YhTMpz0xaA1NYg!2e0?source=apiv3"> our address</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a id="faqs" href="">FAQ's</a></li>   
+                    <li><a href="#">order methods</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>view online</h4>
+                <ul>
+                    <h5>House favourites:</h5>
+                    <li><a href="https://www.youtube.com/watch?v=--r_50CF0AQ&pp=ygUZY291aWxsZXMgZGUgbW91dG9uIHJlY2lwZQ%3D%3D">Couilles de Mouton</a></li> 
+                    <li><a href="https://www.youtube.com/watch?v=_Bx9P32tdaM&pp=ygUYQm9ldWYgQm91cmd1aWdub24gcmVjaXBl">Boeuf Bourguignon</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=XbO_qCNea3A&pp=ygUZQ2hvY29sYXRlIFNvdWZmbMOpIHJlY2lwZQ%3D%3D">Chocolate Soufflé</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=3Kh2R8tULas&pp=ygUQZXNjYXJnb3QgcmVjaXBlcw%3D%3D">Escargot</a></li>  
+                </ul>
+                </div>
+                <div class="footer-col">
+                <h4>follow us</h4> 
+                <div class="social-links">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>  
+                  <a href="https://twitter.com/?lang=en-za"><i class="fab fa-twitter"></i></a>  
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>  
+                  <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>  
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    </div>    
+     
+      </footer>
+        <!-- bootstrap js  -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu.js"></script>
+    <script src="testimonials.js"></script>
+    <script src="gallery.js"></script>
+    <script src="form.js"></script>
+    <script src="FAQS.js"></script>
+
+</body>
+</html>
+<!-- AOS js init -->
+<script>
+ (function () {
+   window.mc4wp = window.mc4wp || {
+    listeners: [],
+      forms: {
+        on: function (evt, cb) {
+          window.mc4wp.listeners.push({
+            event: evt,
+             callback: cb,
+          });
+        },
+      },
+    };
+  })();
+    AOS.init();
+  </script>
