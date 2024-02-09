@@ -127,7 +127,7 @@ nav ul li a:active{
              <li><a class="navLinks" href="#Menu">Menu</a></li>
              <li><a class="navLinks" href="#Contact">Contact</a></li> -->
                  <div class="topnav-right">
-                     <li><a href="./index.html" class="btn btn2" id="navLinks">Go back</a></li>
+                     <li><a class="btn btn2" id="back">Go back</a></li>
                  </div>
            </ul>
          </div>
@@ -166,6 +166,10 @@ nav ul li a:active{
     </div>
 </div>
     <!-- Add more FAQs as needed -->
+<script > 
+let back = document.getElementById("back");
 
+back.addEventListener("click", function(){ window.close(); });
+</script>
 </body>
 </html>
