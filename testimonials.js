@@ -45,12 +45,12 @@
  
     // Typed text JAVASCRIPT
  
-    var typed = new Typed('#typed-text', {
-        strings: ["What our customers are saying about us"],
-        typeSpeed: 50,
-        backSpeed: 40,
-        loop: true
-    });
+    // var typed = new Typed('#typed-text', {
+    //     strings: ["What our customers are saying about us"],
+    //     typeSpeed: 50,
+    //     backSpeed: 40,
+    //     loop: true
+    // });
 
 
     function validateForm() {
