@@ -91,15 +91,8 @@ nav ul li a:active{
 .btn.btn2{
     display: inline-block;
     background-color: rgba(128, 128, 128, 0.79);
+}
 
-}
-#darkMode{
-    color: #fff;
-}
-.light {
-    background-color: rgba(178, 150, 122, 0.301);
-    color: #000;
-}
 
 /*Landing Styles*/
 
@@ -128,10 +121,12 @@ nav ul li a:active{
  /*padding-top: 320px;*/
  /* text-shadow: 3px 3px 7px#000; */
 }
-.subtitle{
-  color: white;
- display: flex;
- justify-content: center;
+
+  p .subtitle, #land-sub{
+    display: flex;
+    justify-content: center;
+    color: white;
+   
 }
 
 

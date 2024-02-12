@@ -1,8 +1,10 @@
-function myFunction() {
-    var x = document.getElementByClass("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+const popButton = document.getElementById("show-popup");
+
+popButton.addEventListener("click", popUp);
+
+function popUp() {
+  alert("Button pressed");
+  window.open("/popup.html", "login", "width:50,height:50");
+}
+
+
